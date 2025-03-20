@@ -18,3 +18,9 @@ def Home_view(request):
         
         form=Contact_Form()
     return render(request,'home.html',{"form":form,"services":service,'repeat_count': repeat_count})
+
+def About_us_view(request):
+    return render(request,"aboutus.html")
+
+def Condact_view(request):
+    return render(request,"condact.html")
