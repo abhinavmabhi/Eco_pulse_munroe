@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/aboutuss.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 350px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-icon {
+    font-size: 50px;
+    color: #17a2b8;
+}
+.team img {
+    border-radius: 50%;
+}
+
+
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box, .feature-box {
+    border-radius: 10px;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover, .feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-us .feature-box {
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.why-choose-us .feature-box:hover {
+    background: #f8f9fa;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}

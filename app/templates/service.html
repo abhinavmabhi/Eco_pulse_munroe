@@ -1,0 +1,84 @@
+{%extends 'base.html'%}
+{% load static%}
+{%block main_block%}
+
+<div class="container-fluid">
+    <div class="service-video border border-2">
+        <video autoplay muted loop>
+            <source src="{% static 'video/eco-pulse.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
+
+<div class="service mt-5" id="service">
+    <div class="container-fluid overflow-hidden">
+        <div class="row">
+            <h1 class="d-flex justify-content-center mb-5 fw-700">Service</h1>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    {% for i in repeat_count %}
+                    <div class="icon-box">
+                        <i class="fa-solid fa-water fa-4x" style="color:#00bcd4;"></i>
+                        <h5 class="mt-2">Kayaking</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-ship fa-4x" style="color:#ff9800;"></i>
+                        <h5 class="mt-2">Canal Boating</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-house fa-4x" style="color:#4caf50;"></i>
+                        <h5 class="mt-2">Home Stay</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-sailboat fa-4x" style="color:#e91e63;"></i>
+                        <h5 class="mt-2">Shikkara</h5>
+                    </div>
+                    {% endfor %}
+                    {% for i in repeat_count %}
+                    <div class="icon-box">
+                        <i class="fa-solid fa-water fa-4x" style="color:#00bcd4;"></i>
+                        <h5 class="mt-2">Kayaking</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-ship fa-4x" style="color:#ff9800;"></i>
+                        <h5 class="mt-2">Canal Boating</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-house fa-4x" style="color:#4caf50;"></i>
+                        <h5 class="mt-2">Home Stay</h5>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-sailboat fa-4x" style="color:#e91e63;"></i>
+                        <h5 class="mt-2">Shikkara</h5>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- booking ================================= -->
+
+<div class="container">
+    <div class="row">
+        {%for s in services%}
+        <div class="col-6 col-md-6 col-lg-3 my-5 d-flex justify-content-center"  data-aos="flip-down">
+            <div class="card">
+                <img src="{{s.image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{s.name}}</h5>
+                    <p class="card-text">{{s.description}}</p>
+                    <p class="card-price">₹{{s.price}}</p>
+                    <a href="https://wa.me/9207773847" class="btn btn-warning">Book Now</a>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+{%endblock%}
