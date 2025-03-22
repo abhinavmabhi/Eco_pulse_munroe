@@ -9,10 +9,9 @@
             <img src="{% static 'image/carosel1.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-overlay">
                 <h2 data-aos="slide-right">Experience Serenity at EcoPulse Resort</h2>
-                <p data-aos="slide-right">Nestled in the heart of Munroe Island, EcoPulse Resort offers a tranquil
+                <p style="width: 420px;" data-aos="slide-right">Nestled in the heart of Munroe Island, EcoPulse Resort offers a tranquil
                     escape surrounded by
-                    lush greenery and serene backwaters. Immerse yourself in nature, unwind in our cozy cottages,
-                    and experience the charm of Kerala’s hidden paradise.</p>
+                    lush greenery and serene backwaters.</p>
                 <a href="#about" class="nature-button">View More</a>
             </div>
         </div>
@@ -20,9 +19,7 @@
             <img src="{% static 'image/carosel2.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-overlay">
                 <h2> Discover the Hidden Paradise of Munroe Island</h2>
-                <p>EcoPulse Resort is your gateway to the breathtaking beauty of Munroe Island. Wake up to the
-                    soothing sounds of nature, enjoy mesmerizing backwater views, and indulge in an unforgettable
-                    retreat amidst Kerala’s untouched landscapes.</p>
+                <p style="width: 420px;">EcoPulse Resort is your gateway to the breathtaking beauty of Munroe Island</p>
                 <a href="#about" class="nature-button">View More</a>
             </div>
         </div>
@@ -30,9 +27,7 @@
             <img src="{% static 'image/carosel3.jpg' %}" class="d-block w-100" alt="...">
             <div class="carousel-overlay">
                 <h2> Escape to Nature, Embrace Tranquility</h2>
-                <p>At EcoPulse Resort, experience a perfect blend of luxury and nature. Enjoy peaceful backwater
-                    cruises, traditional Kerala cuisine, and cozy stays designed for ultimate relaxation. Reconnect
-                    with nature in the most enchanting way.</p>
+                <p style="width: 420px;">At EcoPulse Resort, experience a perfect blend of luxury and nature.</p>
                 <a href="#about" class="nature-button">View More</a>
             </div>
         </div>
@@ -76,18 +71,34 @@
     style="background: url('static/image/parallel-image.jpg') no-repeat center center/cover; min-height: 100vh;">
     <!-- dianamic exp nd happy cus buttons  -->
 
-    <section class="stats" id="stats-section" data-aos="flip-down">
-        <div class="stat-item bg-white">
-            <i class="fas fa-user-tie"></i>
-            <h2 class="counter" data-target="10">10</h2>
-            <p>Years of Experience</p>
-        </div>
-        <div class="stat-item bg-white" data-aos="flip-up">
-            <i class="fas fa-smile"></i>
-            <h2 class="counter" data-target="3000">0</h2>
-            <p>Happy Customers</p>
+    <section class="stats py-5 text-center" id="stats-section"  >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-4 mb-4">
+                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="100" >
+                        <i class="fas fa-user-tie text-primary fa-3x mb-2"></i>
+                        <h2 class="counter" data-target="10">10</h2>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mb-4">
+                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="200" >
+                        <i class="fas fa-smile text-warning fa-3x mb-2"></i>
+                        <h2 class="counter" data-target="3000">0</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="300">
+                        <i class="fas fa-ship text-success fa-3x mb-2"></i>
+                        <h2 class="counter" data-target="2500">0</h2>
+                        <p>Happy Rides</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
 
 
 
@@ -96,21 +107,21 @@
 
     <h1 class="d-flex justify-content-center text-black">Customer Review</h1>
     <div id="customerReviews" class="container carousel slide d-flex justify-content-center" data-bs-ride="carousel">
-        <div class="carousel-inner ">
+        <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="row text-center" data-aos="flip-down">
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Arjun Nair</h5>
-                            <p>"A wonderful stay with mesmerizing backwater views!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> A wonderful stay with backwater views is awsome <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Sneha Rao</h5>
-                            <p>"Loved the peaceful ambiance. Would visit again!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> Loved the peaceful ambiance. Must visit place in kollam <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐☆</div>
                         </div>
                     </div>
@@ -122,14 +133,14 @@
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Rahul Menon</h5>
-                            <p>"Great hospitality and clean rooms. Highly recommended!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> Great hospitality and clean rooms. Highly recommended! <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Divya Sharma</h5>
-                            <p>"A hidden paradise. Had an amazing time kayaking!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> A hidden paradise. Had an amazing time kayaking! <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐☆</div>
                         </div>
                     </div>
@@ -141,14 +152,14 @@
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Karthik S.</h5>
-                            <p>"The food was delicious, and the resort was very clean!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> The food was delicious, and the resort was very clean! <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Neha Kapoor</h5>
-                            <p>"The views were stunning! A must-visit place."</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> The views were stunning! A must-visit place. <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐☆</div>
                         </div>
                     </div>
@@ -160,14 +171,14 @@
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Manoj Pillai</h5>
-                            <p>"Friendly staff and a great experience overall."</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> Friendly staff and a great experience overall. <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Priya Das</h5>
-                            <p>"The cottages were so cozy! Will definitely come back."</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> The cottages were so cozy! Will definitely come back. <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐☆</div>
                         </div>
                     </div>
@@ -179,21 +190,21 @@
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Vishal Verma</h5>
-                            <p>"One of the best resorts in Kerala!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> One of the best resorts in Kerala! <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="review-card my-5 border border-success border-2 p-5 rounded-5 bg-white">
                             <h5>Aditi R.</h5>
-                            <p>"Perfect weekend getaway with breathtaking views!"</p>
+                            <p><i class="fa-solid fa-quote-right fa-flip-horizontal" style="color: #FFD43B;"></i> Perfect weekend getaway with breathtaking views! <i class="fa-solid fa-quote-right fa-flip-vertical" style="color: #FFD43B;"></i></p>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
         <!-- Carousel Controls -->
         <button class="carousel-control-prev " type="button" data-bs-target="#customerReviews" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-success rounded-pill" aria-hidden="true"></span>
@@ -204,6 +215,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    
 
 </div>
 

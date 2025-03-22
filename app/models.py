@@ -19,6 +19,7 @@ class Contact(models.Model):
     )
     service=models.CharField(max_length=200, choices=choice, default="Home Stay")
     name=models.CharField(max_length=200)
+    email=models.EmailField()
     phone=models.CharField(max_length=12)
     message=models.TextField()
     choose_date=models.DateTimeField()

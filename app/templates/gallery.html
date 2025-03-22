@@ -1,0 +1,75 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block main_block%}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+
+<div class="container-fluid p-0 position-relative">
+    <img src="{% static 'image/munroe-about.jpg' %}" alt="About Us" class="w-100 img-fluid custom-img">
+    <div class="overlay">
+        <h2 class="overlay-text"><b class="text-primary">Explore</b> Service</h2>
+    </div>
+</div>
+
+
+
+<div class="container mt-5">
+    <div class="row my-4" data-aos="fade-right">
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/home-stay.jpg' %}" class="img-fluid rounded shadow" style="height: 250px; width: 470px;" alt="Home Stay Image 3">
+                <div class="hover-text">Home Stay</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/boating2.jpeg' %}" class="img-fluid rounded shadow" style="height: 250px;" alt="Home Stay Image 4">
+                <div class="hover-text">Canal Boating</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/kayaking2.jpg' %}" class="img-fluid rounded shadow" style="height: 250px; width: 400px;" alt="Home Stay Image 5">
+                <div class="hover-text">Kayaking</div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-4" data-aos="fade-right">
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/kayaking.webp' %}" class="img-fluid rounded shadow" style="height: 450px;" alt="Home Stay Image 1">
+                <div class="hover-text">Kayaking</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/shikkara.jpg' %}" class="img-fluid rounded shadow" style="height: 450px;" alt="Home Stay Image 2">
+                <div class="hover-text">Shikkara</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-4" data-aos="fade-right">
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/canal-boating.jpg' %}" class="img-fluid rounded shadow" style="height: 250px;" alt="Home Stay Image 3">
+                <div class="hover-text">canal Boating</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/munroe-about.jpg' %}" class="img-fluid rounded shadow" style="height: 250px;" alt="Home Stay Image 4">
+                <div class="hover-text">Canal Boating</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="hover-container">
+                <img src="{% static 'image/bedroom.jpg' %}" class="img-fluid rounded shadow" style="height: 250px; width: 400px;" alt="Home Stay Image 5">
+                <div class="hover-text">BedRoom</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{%endblock%}
