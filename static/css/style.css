@@ -81,9 +81,12 @@ body {
 
 .navbar-toggler {
     border: none;
-    background: rgba(255, 255, 255, 0.7);
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Inverts the color to white */
 }
 
 .navbar-toggler:focus {
@@ -103,7 +106,7 @@ body {
     }
 
     .navbar-collapse {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.6);
         padding: 10px;
         border-radius: 10px;
     }
@@ -203,7 +206,7 @@ body {
 /* beep animation  */
 .fixed-social {
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     right: 30px;
     display: flex;
     flex-direction: column;
@@ -293,9 +296,7 @@ body {
 .carousel-item img {
     width: 100%;
     height: 100vh;
-    /* Full viewport height */
     object-fit: cover;
-    /* Ensures the image fills the container */
 }
 
 .carousel-overlay {
@@ -371,7 +372,7 @@ body {
 
 /* Logo */
 .logoo img {
-    width: 150px;
+    width: 350px;
     height: auto;
 }
 
@@ -577,11 +578,9 @@ body {
 /* contact -======== */
 .contact-img {
     position: relative;
-    /* Ensures child elements are positioned relative to this */
     width: 100%;
     height: 450px;
     overflow: hidden;
-    /* Prevents unwanted overflow */
 }
 
 .contact-img img {
