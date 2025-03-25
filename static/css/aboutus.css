@@ -34,6 +34,7 @@
     height: 350px;
 }
 
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -74,15 +75,59 @@
     background: white;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .why-choose-us .feature-box:hover {
     background: #f8f9fa;
     transform: scale(1.05);
+    
 }
 
 @media (max-width: 768px) {
     .section-title {
         font-size: 2rem;
+    }
+}
+
+.text-muted{
+    text-align:justify;
+}
+
+
+
+/* mobile responsive */
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+    .hero{
+        height: 120px;
+    }
+    .hero h1 {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        
+    }
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+    .section-title {
+        font-size: 22px;
+    }
+    .feature-box {
+        padding: 20px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .service-icon {
+        font-size: 36px;
+    }
+    .team img {
+        width: 80px;
+        height: 80px;
     }
 }
