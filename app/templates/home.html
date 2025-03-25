@@ -67,22 +67,27 @@
 
 
 
-<div class="home-bg container-fluid"
+<div class="home-bg container-fluid position-relative"
     style="background: url('static/image/bg-home.webp') no-repeat center center/cover; min-height: 100vh;">
-    <!-- dianamic exp nd happy cus buttons  -->
+    
+    <!-- Black Transparent Overlay -->
+    <div class="overlay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);">
+    </div>
 
-    <section class="stats py-5 text-center" id="stats-section">
+    <!-- Content -->
+    <section class="stats py-5 text-center position-relative" id="stats-section">
         <div class="container">
             <div class="happy row justify-content-center">
                 <div class="col-md-4 col-sm-4 mb-4">
-                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="100" >
+                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="100">
                         <i class="fas fa-user-tie text-primary fa-3x mb-2"></i>
                         <h2 class="counter" data-target="10">10</h2>
                         <p>Years of Experience</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 mb-4">
-                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="200" >
+                    <div class="stat-item bg-white p-4 shadow rounded" data-aos="flip-down" data-aos-delay="200">
                         <i class="fas fa-smile text-warning fa-3x mb-2"></i>
                         <h2 class="counter" data-target="3000">0</h2>
                         <p>Happy Customers</p>
@@ -98,9 +103,8 @@
             </div>
         </div>
     </section>
-    
-    <div class="container my-5 text-center bg-white border rounded-4 p-3 mb-3" data-aos="slide-right">
 
+    <div class="container my-5 text-center bg-white border rounded-4 p-3 mb-3 position-relative" data-aos="slide-right">
         <h2 class="fade-in mb-5">Our Services</h2>
         <div class="row mt-4 fade-in">
             <div class="col-md-3">
@@ -126,9 +130,8 @@
         </div>
     </div>
 
-    
-
 </div>
+
 
 
 
