@@ -102,6 +102,7 @@
 
 
 
+
 /* addon  */
 
 /* Default styles for desktop */
@@ -182,10 +183,21 @@
     }
 }
 
-
+/* image card */
 @media (max-width: 768px) {
-        
+    .hover-container img {
+        height: 180px !important; /* Reduce height for tablets */
+        width: auto !important; /* Maintain aspect ratio */
     }
+}
+
+@media (max-width: 576px) {
+    .hover-container img {
+        height: 130px !important; /* Reduce height further for mobile screens */
+        width: auto !important;
+    }
+}
+
 
 
 

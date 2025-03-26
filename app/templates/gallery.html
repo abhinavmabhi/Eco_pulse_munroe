@@ -3,7 +3,7 @@
 {%block main_block%}
 <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
 
-<div class="gallery-head container-fluid p-0 position-relative">
+<div class="gallery-head container-fluid p-0 position-relative" data-aos="fade-down">
     <img src="{% static 'image/munroe-about.jpg' %}" alt="About Us" class="w-100 img-fluid custom-img">
     <div class="overlay">
         <h2 class="overlay-text">Explore Service</h2>
@@ -67,6 +67,23 @@
                 <div class="hover-text">BedRoom</div>
             </div>
         </div>
+
+
+        <div class="row my-4" data-aos="fade-right">
+            <div class="col">
+                <div class="hover-container" data-aos="fade-right" data-aos-delay="100">
+                    <img src="{% static 'image/kayaking2.jpeg' %}" class="img-fluid rounded shadow" style="height: 450px;" alt="Home Stay Image 1">
+                    <div class="hover-text">Kayaking</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="hover-container" data-aos="fade-right" data-aos-delay="200">
+                    <img src="{% static 'image/shikkara2.jpg' %}" class="img-fluid rounded shadow" style="height: 450px;" alt="Home Stay Image 2">
+                    <div class="hover-text">Shikkara</div>
+                </div>
+            </div>
+        </div>
+    
     </div>
 </div>
 
