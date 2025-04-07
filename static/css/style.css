@@ -786,6 +786,7 @@ body {
 
 /* service media================== */
 
+
 @media (max-width: 768px) {
     .service-video{
         height: 300px;
@@ -815,3 +816,7 @@ body {
         margin-right: -15px;
     }
 }
+
+
+/* service===================== */
+

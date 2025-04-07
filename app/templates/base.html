@@ -17,10 +17,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- aos script  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 </head>
 
@@ -99,7 +100,8 @@
             <!-- Copyright -->
             <div class="footer_copyright text-center">
                 <p>Copyright © 2025 All rights reserved | Designed and Developed by <a
-                        href="https://www.inspirezesttechnologies.com" rel="nofollo"> <b class="text-light">InspireZest Technologies Pvt</b>
+                        href="https://www.inspirezesttechnologies.com" rel="nofollo"> <b class="text-light">InspireZest
+                            Technologies Pvt</b>
                         Ltd</a></p>
             </div>
         </div>
@@ -116,7 +118,7 @@
 
 
     <script>
-        AOS.init();
+        
         window.addEventListener("scroll", function () {
             let navbar = document.querySelector(".navbar");
             if (window.scrollY > 10) {
@@ -126,6 +128,9 @@
             }
         });
 
+    </script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
