@@ -75,20 +75,33 @@
 
 <div class="container">
     <div class="row">
-        {%for s in services%}
+        {% for s in services %}
         <div class="col-12 col-md-6 col-lg-4 my-3 mb-5 d-flex justify-content-center" data-aos="flip-down">
             <div class="card" style="width: 350px;">
-                <img src="{{s.image.url}}" class="card-img-top w-100" alt="...">
+                <img src="{{ s.image.url }}" class="card-img-top w-100" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{s.name}}</h5>
-                    <p class="card-text">{{s.description}}</p>
-                    <p class="card-price">₹{{s.price}}</p>
-                    <a href="https://wa.me/9207773847" class="btn btn-warning">Book Now</a>
+                    <h5 class="card-title">{{ s.name }}</h5>
+                    <p class="card-text">{{ s.description }}</p>
+                    <p class="card-price">₹{{ s.price }}</p>
+
+                    {% with msg1="Hi, I am interested in the service: "|add:s.name %}
+                    {% with msg2=msg1|add:" - "|add:s.description %}
+                    {% with msg3=msg2|add:". Price: ₹"|add:s.price|stringformat:"s" %}
+                        <a href="https://wa.me/9744013659?text={{ msg3|urlencode }}" class="btn btn-warning" target="_blank">
+                            Book Now
+                        </a>
+                    {% endwith %}
+                    {% endwith %}
+                    {% endwith %}
+
                 </div>
             </div>
         </div>
-        {%endfor%}
+        {% endfor %}
     </div>
 </div>
+
+
+
 
 {%endblock%}
